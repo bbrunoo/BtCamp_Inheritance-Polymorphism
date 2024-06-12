@@ -18,13 +18,15 @@ namespace BootCamp_Inheritance_Polymorphism.Entities
             _hours = hours;
             _valuePerHour = valuePerHour;
         }
-        public Employee() { }
 
-   
         public virtual double Payment()
         {
             return _hours * _valuePerHour;
         }
 
+        public string GetName()
+        { 
+            return _name;
+        }
     }
 }
